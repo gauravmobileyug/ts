@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Forms extends CI_Controller {
 
 	private $user_data  = array();
-
+        private $test_data = array();
 	public function __construct(){
 		parent::__construct();
 		

@@ -2,9 +2,9 @@
 $db['default'] = array(   
 	'dsn' => '',
     'hostname' => 'localhost', 
-	'username' => 'versetalems', 
-	'password' => 'NW3ofLxENtt(', 
-	'database' => 'versetal_ems',
+	'username' => '', 
+	'password' => '', 
+	'database' => '',
     'dbdriver' => 'mysqli', 
 	'dbprefix' => 'ems',
     'pconnect' => FALSE,  
