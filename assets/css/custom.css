@@ -1,0 +1,93 @@
+.login-box-custom{box-shadow: 10px 10px 5px #888888;}
+.login-footer-custom{position: fixed;    bottom: 0;    width: 100%;    text-align: center;    margin: 0;}
+.login-header-custom{ background: white;    padding: 5px;}.error{ color: red; }
+.no-data{text-align: center !important; font-size: x-large;}
+.custom-alerts .close{ right: 0px !important;}
+.custom-alerts{	width: 480px; opacity: 0.9;right: 16px;top: 51px;position: absolute;z-index: 9999; padding:8px !important;margin-bottom:0px !important;right: 50px;} 
+.custom-close{ color: white !important;font-size: 18px !important;text-decoration: none !important;}
+.ems-header{float: right;font-size: 22px;font-family: Georgia, serif; padding: 10px;} 
+.total-time{text-align: center; float: left; margin-left: 240px; font-weight: bold;}
+.custom-dropdown-menu { min-width: auto;position:relative;}
+.custom-dropdown-menu>li>a {
+    color: #fff;
+}
+blockquote{
+	    border: 0px !important;
+}
+.vis-gallery .carousel-inner .item img {
+	width:100%;
+	height:250px;
+}
+.em-required{
+	color:red;
+}
+.marker {
+    background-color: Yellow;
+}
+.fspan{color: #7db832;}
+.logo-png{ 
+	background-image: url('images/logo-png2.png');
+    background-repeat: no-repeat;
+    background-size: 157px 33px;
+    height: 50px;       
+	margin-top: 10px;
+}
+.disabled{
+	pointer-events:none;
+}
+.tab-min-height{
+	min-height: 420px;
+}
+.own-form .control-label{
+	text-align:left;
+	padding-top:20px;
+}
+.custom-label{
+	font-weight: 500;
+}
+
+.custom-dropdown-menu{
+	background-color:#222d32;
+}
+.custom-dropdown-menu>li>a{
+	color: #fff;
+}
+.table>tbody>tr>td,
+ .table>tbody>tr>th,
+ .table>tfoot>tr>td, 
+ .table>tfoot>tr>th,
+ .table>thead>tr>td,
+ .table>thead>tr>th { 
+	padding:2px;
+	padding-left: 13px;
+    text-align: left;
+ }
+ .edit-custom-input{    height: 27px;}
+ .custom-user-icon{ font-size: 36px; color: #fff;}
+ .custom-user-icon2{ font-size: 16px; color: #000;}
+ .current_status .select2-container{width:175px !important;}
+ .break{ background-color: #ecf0f5;}
+ .user-header{/* height: 75px !important; */}
+ .select2-container .select2-selection--single{height:35px !important;}
+ .box-body-scroll{
+	height: 500px;
+    overflow-y: auto;
+ }
+ .timesheet-desc{
+	/* width: 354px; */
+ }
+ .text-danger{
+	color: red;
+ }
+ .timesheet-span{
+	visibility:hidden;
+ }
+ .timesheet-table tr:hover .timesheet-span{
+	visibility:visible;
+ }
+ .custom-td td{
+	font-size: 12px;
+ }
+.widget-user .widget-user-header {
+	height: 139px;
+ }

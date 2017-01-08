@@ -1,0 +1,97 @@
+
+<div class="content-wrapper">
+<?php //fn_ems_debug($employee_details); ?>
+<section class="content-header">
+  <h1>
+	Leave Details Of <b><?php echo ucwords($employee_details['firstname'].' '.$employee_details['lastname']);?></b> [ <b><?php echo $employee_details['employee_id'];?></b> ]
+  </h1>
+  <ol class="breadcrumb">
+	<li><a href="<?php echo site_url();?>"><i class="fa fa-dashboard"></i> Home</a></li>
+	<li class="active">Leave Details</li>
+  </ol>
+</section>
+
+<!-- Main content -->
+<section class="content">
+
+	<div class="row">
+	<div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Leave Details</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body table-responsive no-padding">
+			<div class="table-responsive no-padding">
+				<table class="table dataTable table-hover table-striped">				
+					<tbody>
+						<tr>
+							<td><b>Leave Type</b></td>
+							<td><?php echo $leave_details['leave_name'];?></td>
+							
+							<td><b>Leave From</b></td>
+							<td><?php echo $leave_details['leave_from'];?></td>
+							
+							<td><b>Leave To</b></td>
+							<td><?php echo $leave_details['leave_to'];?></td>
+							
+							<td><b>Application Date</b></td>
+							<td><?php echo echo date('d-M-Y h:i:s',strtotime($leave_details['date_added']));?></td>							
+						</tr>
+						
+						<tr>
+							<td>
+								<b>Number Of Days</b>
+							</td>
+							<td><?php echo $leave_details['no_of_days'];?></td>
+							<td>
+								<b>Half Day Leave ?</b>
+							</td>
+							<td><b><?php echo ($leave_details['half_day'] == 'N') ?  'NO' : 'Yes';?></b></td>
+						
+							<td>
+								<b>Emergency Leave ?</b>
+							</td>
+							<td><b><?php echo ($leave_details['emergency_leave'] == 'N') ?  'NO' : 'Yes';?></b></td>
+						
+							
+						</tr>
+						
+						
+						<tr>
+							<td colspan="2">
+								<b>Reason</b>
+							</td>
+							
+							<td colspan="6">
+								<?php echo $leave_details['leave_reason'];?>
+							</td>
+							
+							
+						</tr>
+						
+						
+					</tbody>
+				</table>
+				</div>
+            </div>
+			<div class="box-footer clearfix">
+				<?php if($user_data['user_designation'] == 6){ ?>
+				<div class="pull-right">
+				
+						<?php if(!$leave_details['approved']){?>
+							<a href="javascript:void(0);" class="approve btn btn-primary"> <i class="fa fa-thumbs-o-up"></i>Approve</a>
+						<?php }else{ ?>
+							<a href="javascript:void(0);" class="approve btn btn-success"> <i class="fa fa-check-square-o"></i>Approved</a>
+						<?php } ?>
+					
+				</div>
+				<?php } ?>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+	</div>
+<section>
+</div>
