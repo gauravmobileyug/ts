@@ -1,13 +1,13 @@
 <?php
 $db['default'] = array(   
 	'dsn' => '',
-    'hostname' => 'localhost', 
+        'hostname' => 'localhost', 
 	'username' => '', 
 	'password' => '', 
 	'database' => '',
-    'dbdriver' => 'mysqli', 
+        'dbdriver' => 'mysqli', 
 	'dbprefix' => 'ems',
-    'pconnect' => FALSE,  
+        'pconnect' => FALSE,  
 	//'db_debug' => (ENVIRONMENT !== 'production'), 
 	'cache_on' => FALSE,  
 	'cachedir' => '', 
